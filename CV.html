@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Daniel Fontana</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Calibri', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        
+        .sidebar {
+            width: 30%;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px;
+        }
+        
+        .main-content {
+            width: 70%;
+            padding: 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #3498db;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .contact-icon {
+            width: 20px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .sidebar .section-title {
+            color: #fff;
+            border-bottom-color: #3498db;
+        }
+        
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        
+        .skill-name {
+            margin-bottom: 5px;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background-color: #3498db;
+        }
+        
+        .resume-summary {
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        
+        .item-subtitle {
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        
+        .item-date {
+            color: #7f8c8d;
+        }
+        
+        .item-description {
+            text-align: justify;
+        }
+        
+        .item-responsibilities {
+            margin-top: 10px;
+        }
+        
+        .item-responsibilities li {
+            margin-bottom: 5px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .item-responsibilities li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>Daniel Fontana</h1>
+                <h2>Analista de Dados</h2>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>(11) 9.8241-8172</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>daniel_s8@outlook.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>São Paulo, SP</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <div>linkedin.com/in/daniel-fontana-31392b99</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Habilidades Técnicas</h3>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Power BI (Intermediário)</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Excel (Avançado)</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">SQL (Básico)</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 40%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Análise de Dados</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Visualização de Dados</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Formação</h3>
+                
+                <div class="education-item">
+                    <div class="item-title">Ciências Contábeis</div>
+                    <div>Universidade Nove de Julho</div>
+                    <div class="item-date">Conclusão: 12/2023</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Certificações</h3>
+                
+                <div class="education-item">
+                    <div>Power BI: DAX contextos e iteração</div>
+                    <div>Alura</div>
+                </div>
+                
+                <div class="education-item">
+                    <div>Six Sigma Yellow Belt</div>
+                    <div>FM2S</div>
+                </div>
+                
+                <div class="education-item">
+                    <div>SQL Server: Formação Básica</div>
+                    <div>LinkedIn</div>
+                </div>
+                
+                <div class="education-item">
+                    <div>Power BI Experience</div>
+                    <div>LinkedIn</div>
+                </div>
+                
+                <div class="education-item">
+                    <div>Data Analysis: Google Sheets</div>
+                    <div>Alura</div>
+                </div>
+                
+                <div class="education-item">
+                    <div>Introdução à Amazon Web Services</div>
+                    <div>LinkedIn</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Idiomas</h3>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Português (Nativo)</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Inglês (Básico)</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="resume-summary">
+                <h3 class="section-title">Resumo Profissional</h3>
+                <p>Profissional de análise de dados com mais de 3 anos de experiência, especializado na criação e implementação de soluções de Business Intelligence para suporte à tomada de decisões estratégicas. Com formação em Ciências Contábeis e forte conhecimento técnico em Power BI, SQL e Excel, tenho demonstrado capacidade de transformar dados complexos em insights acionáveis que impulsionam resultados de negócios. Minha trajetória profissional revela uma progressão consistente na área de dados, com foco em comunicar insights de maneira clara e impactante, além de compromisso com o aprendizado contínuo e adaptação a novas tecnologias emergentes.</p>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Experiência Profissional</h3>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Analista de Inteligência em Compra Jr.</div>
+                        <div class="item-date">03/2023 - Atual</div>
+                    </div>
+                    <div class="item-subtitle">GRUPO DPSP</div>
+                    <div class="item-description">
+                        <p>Responsável por auxiliar a equipe de compras na análise de dados e geração de relatórios estratégicos, garantindo informações precisas e atualizadas para suporte à tomada de decisão.</p>
+                        <ul class="item-responsibilities">
+                            <li>Desenvolvimento de dashboards no Power BI para análise de indicadores de compras, resultando em redução no tempo de tomada de decisão.</li>
+                            <li>Extração e tratamento de dados de sistemas em formato Excel para desenvolvimento de relatórios analíticos.</li>
+                            <li>Consolidação e envio de informações diárias para os compradores, auxiliando na análise de compras e negociações.</li>
+                            <li>Gestão e controle das plataformas de viagens corporativas (99 e Avipam), otimizando os custos de deslocamento.</li>
+                            <li>Elaboração de orçamentos e relatórios detalhados para acompanhamento de despesas e otimização de custos.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Analista de Informações Jr. - Power BI</div>
+                        <div class="item-date">12/2022 - 03/2023</div>
+                    </div>
+                    <div class="item-subtitle">JADLOG LOGÍSTICA</div>
+                    <div class="item-description">
+                        <p>Responsável pela criação e análise de dashboards para monitoramento de indicadores do setor de atendimento, utilizando Power BI e SQL para extração e tratamento de dados.</p>
+                        <ul class="item-responsibilities">
+                            <li>Desenvolvimento de dashboards no Power BI para análise de indicadores do atendimento, melhorando a visualização de KPIs críticos.</li>
+                            <li>Monitoramento e acompanhamento de entregas em atraso, contribuindo para redução nas reclamações de clientes.</li>
+                            <li>Extração e manipulação de dados utilizando SQL para alimentar relatórios e dashboards.</li>
+                            <li>Apresentação semanal com informações sobre entregas atrasadas e a nota do Reclame Aqui, fornecendo insights para otimização do atendimento.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div class="item-title">Assistente Administrativo Jr.</div>
+                        <div class="item-date">11/2019 - 12/2022</div>
+                    </div>
+                    <div class="item-subtitle">CROMO COMÉRCIO IMPORTAÇÃO E EXPORTAÇÃO</div>
+                    <div class="item-description">
+                        <p>Responsável pela implementação pioneira do Power BI na empresa, marcando o início da minha trajetória na área de dados. Desenvolvi soluções para a gestão de pedidos feitos por prefeituras.</p>
+                        <ul class="item-responsibilities">
+                            <li>Implementação do Power BI como primeira ferramenta de BI da empresa, resultando em melhoria na visualização de dados críticos.</li>
+                            <li>Análise do fluxo de materiais, avaliando entregas e saldo disponível em estoque, reduzindo o tempo de resposta a clientes.</li>
+                            <li>Monitoramento de dados de licitação, fornecendo relatórios para acompanhamento da demanda e planejamento de abastecimento.</li>
+                            <li>Desenvolvimento de dashboards para visualização clara do fluxo de materiais, auxiliando na tomada de decisão estratégica.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3 class="section-title">Projetos Relevantes</h3>
+                
+                <div class="experience-item">
+                    <div class="item-title">Dashboard de Análise de Compras</div>
+                    <div class="item-description">
+                        <p>Desenvolvimento de um sistema integrado de visualização para o departamento de compras, consolidando dados de múltiplas fontes e permitindo análise de tendências, comparação de fornecedores e identificação de oportunidades de economia. O projeto resultou em economia significativa nos processos de compra.</p>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="item-title">Sistema de Monitoramento de KPIs Logísticos</div>
+                    <div class="item-description">
+                        <p>Criação de um painel interativo para acompanhamento em tempo real de métricas de entrega, incluindo prazos, devoluções e satisfação do cliente. O sistema permitiu identificação proativa de problemas, reduzindo significativamente o tempo de resposta a incidentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
